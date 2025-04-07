@@ -42,7 +42,7 @@ resolveFile(jsCodeLines);
 const finalCode = `(()=>{\n${jsCodeLines.map(line => `  ${line}`).join('\n')}\n})();`;
 // console.info(finalCode)
 
-fs.writeFileSync('public/script.js', finalCode, 'utf8')
+fs.writeFileSync('docs/script.js', finalCode, 'utf8')
 
 console.info(`------------------------------`);
 
